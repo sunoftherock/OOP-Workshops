@@ -1,3 +1,4 @@
+# Workshop 1 is Released
 # Computer preparation and Getting Workshop files
 
 ## Setting up your computers for OOP244
