@@ -1,5 +1,6 @@
 // Workshop 1:
-// Version: 0.9
+// Version: 0.91 
+//  (removed #include <cstring> that was included by mistake)
 // Date: 2021/10/16
 // Author: Fardad Soleimanloo
 // Description:
@@ -7,7 +8,6 @@
 ///////////////////////////////////////////////////
 #include <iostream>
 #include "cstring.h"
-#include <cstring>
 using namespace sdds;
 using namespace std;
 int main() {
