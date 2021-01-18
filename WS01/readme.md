@@ -1,7 +1,7 @@
-﻿# Workshop #1: Modules  (V1.1) released   
+﻿# Workshop #1: Modules   
  - (V1.0) (Submission is not open)
  - (V1.1) Removed #include <cstring> from the tester that was added by mistake. Also clarified DIY instructions
-
+ - (V1.2) Corrected list of files to be submitted for DIY (part 2) section
 In process of doing your first workshop, in the ***lab*** (part 1) you are to sub-divide a program into modules, compile each module separately and construct an executable from the results of each compilation. In ***DIY*** (part 2) you are to write a module to be used throughout the semester based on your knowledge of ipc144 subject; Cstrings, pointers.
 
 ## Learning Outcomes
@@ -454,8 +454,8 @@ John Doe
 
 Files to submit:  
 ```Text
-Utils.h
-Utils.cpp
+cstring.h
+cstring.cpp
 cstringTester.cpp
 ```
 

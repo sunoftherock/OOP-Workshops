@@ -1,7 +1,8 @@
-# Workshop #1: Modules  (V1.1) released
+# Workshop #1: Modules  (V1.2) released
  - (V1.0) (Submission is not open)
  - (V1.1) Removed #include <cstring> from the tester that was added by mistake. Also clarified DIY instructions.
-
+ - (V1.2) Corrected list of files to be submitted for DIY (part 2) section
+ 
 # Computer preparation and Getting Workshop files
 
 ## Setting up your computers for OOP244
