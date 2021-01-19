@@ -1,9 +1,12 @@
 // Workshop 1:
-// Version: 0.9
+// Version: 1.0
+//   fixed bug for deleting the first item. 
+//   this fix did not effect submission results
 // Date: 2021/10/16
 // Author: Fardad Soleimanloo
 // Description:
 // w1p1.cpp
+//
 ///////////////////////////////////////////////////
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
@@ -207,7 +210,7 @@ bool saveList() {
 }
 
 void removeItem(int index) {
-   if (index > 0 && index < noOfRecs) {
+   if (index >= 0 && index < noOfRecs) {
       noOfRecs--;
       for (int i = index; i < noOfRecs; i++) {
          recs[i] = recs[i + 1];
