@@ -59,7 +59,7 @@ To check the output, use a program that can compare text files.  Search online f
 # LAB (50%)
 ***Shopping List*** is a program that keeps track of your shopping list up to 15 items. You can add items to the list, remove and check the items you bought. Also, you can remove all the checked items and clear the list.
 
-Here is a sample execution of the program 
+Here is a sample execution of the program
 
 ## LAB Execution example
 
@@ -147,7 +147,7 @@ Quantity: 3
 -Select **“Add/Existing Item”**<br />
 -Select **w1p1.cpp** from the file browser<br />
 -Click on **“Ok”**
-- Now you can run the program by selecting **“Debug/Start Without Debugging”** or pressing the **“Ctr-F5”** button. 
+- Now you can run the program by selecting **“Debug/Start Without Debugging”** or pressing the **“Ctr-F5”** button.
 ### On Linux, in your Matrix account
 - Connect to Seneca with [Global Protect VPN](https://inside.senecacollege.ca/its/services/vpn/studentvpn.html)
 - Upload **w1p1.cpp** and **shoppinglist.csv** to your matrix account (Ideally to a designated directory for your workshop solutions). Then, enter the following command to compile the source file and create an executable called ws:
@@ -176,7 +176,7 @@ The **shoppingListApp** module has an implementation (.cpp) file but no header f
 
 #### Header files
 Add **File.h**,  **ShoppingList.h**, **ShoppingRec.h** and **Utils.h** to the “Header Files” directory (right click on “Header Files” and select “Add/New Item” and add a header file)<br />
-Make sure you add the compilation safeguards and also have all the C++ code in the last four modules in a namespace called “sdds”. 
+Make sure you add the compilation safeguards and also have all the C++ code in the last four modules in a namespace called “sdds”.
 
 ##### Compilation Safeguards
 **compilation safeguards** refer to a technique to guard against multiple inclusion of header files. It does so by applying macros that check against a defined name:
@@ -198,10 +198,10 @@ Add **shoppingListApp.cpp**, **File.cpp**,  **ShoppingList.cpp**, **ShoppingRec.
 
 ## Step 3: The main Module
 
-### shoppingListApp Module 
+### shoppingListApp Module
 (The module holding the **main** function)
 
-**shoppingListApp.cpp** file should have these include and namespace statements: 
+**shoppingListApp.cpp** file should have these include and namespace statements:
 ```C++
 #include <iostream>
 #include <cstdlib>
@@ -227,7 +227,7 @@ listMenu
 ## Step 4: organize the code in modules
 -----------------------------------------------
 
-Separate the rest of the functions in **w1p1.cpp** and copy them into the remaining modules as described below. Copy the body of the functions into the cpp files and the prototypes into the header files. 
+Separate the rest of the functions in **w1p1.cpp** and copy them into the remaining modules as described below. Copy the body of the functions into the cpp files and the prototypes into the header files.
 
 #### Guideline for creating modules
 ##### #includes
@@ -240,7 +240,7 @@ Global variable declarations must be in the CPP files to be kept invisible to ot
 ##### Structure definitions
 Structure definitions must be kept in the header file to be visible to all the modules using it.
 
-##### Constant value declarations 
+##### Constant value declarations
 The Constant value declarations are to be added to the file they are used in; if they are used in a header file, they must be added to the header file otherwise they must be added to the CPP file they are used in.
 
 ##### Namespace
@@ -340,7 +340,7 @@ and compile the source code using the following command.
 ```Bash
 g++ shoppingListApp.cpp File.cpp ShoppingList.cpp ShoppingRec.cpp Utils.cpp -Wall -std=c++11 -o ws<ENTER>
 ```
-Run the program like before with the **shoppinglist.csv** file and make sure that everything still works properly. 
+Run the program like before with the **shoppinglist.csv** file and make sure that everything still works properly.
 
 ## LAB Submission (part 1)
 
@@ -363,33 +363,40 @@ and follow the instructions.
 
 
 ## cstring Module
-Create a module called cstring (in files: **cstring.cpp** and **cstring.h**) that You will be using instead of the C string library throughout the semester. 
+Create a module called cstring (in files: **cstring.cpp** and **cstring.h**) that You will be using instead of the C string library throughout the semester.
 
-> **:warning:Important:** You are not allowed to use any C or CPP library functions in this module 
- 
+> **:warning:Important:** You are not allowed to use any C or CPP library functions in this module
+
 ## Functions to implement
 ```C++
-       // Copies the srouce character string into the destination
+   // Copies the srouce character string into the destination
    void strCpy(char* des, const char* src);
-      // Copies the source character string into the destination upto "len"
-      // characters. The destination will be null terminated only if the number
-      // of the characters copied is less than "len"
+
+   // Copies the source character string into the destination upto "len"
+   // characters. The destination will be null terminated only if the number
+   // of the characters copied is less than "len"
    void strnCpy(char* des, const char* src, int len);
-     // Compares two C-strings 
-     // returns 0 i thare the same
-     // return > 0 if s1 > s2
-     // return < 0 if s1 < s2
+
+   // Compares two C-strings
+   // returns 0 if they are the same
+   // return > 0 if s1 > s2
+   // return < 0 if s1 < s2
    int strCmp(const char* s1, const char* s2);
-     // returns 0 i thare the same
-     // return > 0 if s1 > s2
-     // return < 0 if s1 < s2
+
+   // Compares the first "len" characters of two C-strings
+   // returns 0 if they are the same
+   // return > 0 if s1 > s2
+   // return < 0 if s1 < s2
    int strnCmp(const char* s1, const char* s2, int len);
-     // returns the lenght of the C-string in characters
+
+   // returns the length of the C-string in characters
    int strLen(const char* s);
-     // returns the address of first occurance of "str2" in "str1"
-     // returns nullptr if no match is found
+
+   // returns the address of first occurrence of "str2" in "str1"
+   // returns nullptr if no match is found
    const char* strStr(const char* str1, const char* str2);
-     // Concantinates "src" C-string to the end of "des"
+
+   // Concatenates "src" C-string to the end of "des"
    void strCat(char* des, const char* src);
 ```
 
@@ -482,4 +489,3 @@ Then, run the following command from your account
 and follow the instructions.
 
 > **:warning:Important:** Please note that a successful submission does not guarantee full credit for this workshop. If the professor is not satisfied with your implementation, your professor may ask you to resubmit. Re-submissions will attract a penalty.
-
