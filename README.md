@@ -1,10 +1,8 @@
-# Workshop #1: Modules  (V1.2) released
- - (V1.0) (Submission is not open)
- - (V1.1) Removed #include <cstring> from the tester that was added by mistake. Also clarified DIY instructions.
- - (V1.2) Corrected list of files to be submitted for DIY (part 2) section
-## w1p1.cpp (V1.0)  
-   fixed the bug in deleting the first item (*this bug did not effect submission results*) 
-
+# IPC144 Review Session for OOP244 Students
+There will be a reveiw session on IPC144 in Q&A format on Sunday Jan 24th at 8:00 AM. <br />
+This session is open to all the students who need help with IPC144 concepts.<br />
+On Sunday at 8:00 AM click on the link bellow to join the session. (You must use your real full name otherwise you will be kicke out)<br />
+[Joing the IPC144 Review session for OOP244 Students]()
 # Computer preparation and Getting Workshop files
 
 ## Setting up your computers for OOP244
