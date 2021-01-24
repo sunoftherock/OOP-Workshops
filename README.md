@@ -5,7 +5,7 @@ On Sunday at 8:00 AM click on the link bellow to join the session. (You must use
 ## Join
 [Join the IPC144 Review session for OOP244 Students](https://connect.rna2.blindsidenetworks.com/invite/to?c=-ztYQlxzjFXaVK099G6QgyZZNDmGhrUSxzgEFEwF3Kw&m=ca2ea2034a9a221b74359f5b59c8f490e237e04e&t=1611493114613&u=senecacollege)
 ## Review Recordings
-- To be posted
+- Session 1 [BigBlueButton](https://recordings.rna2.blindsidenetworks.com/senecacollege/0b553525140a0a7885b1f0a71edfa98d2652d1ff-1611493114663/capture/) - [YouTube](https://youtu.be/_Ktv6ti5iuA)
 ## Review Session Codes
 - [Session 1](https://github.com/Seneca-244200/OOP244NAB-Notes/tree/main/IPC144Review)
 # Computer preparation and Getting Workshop files
