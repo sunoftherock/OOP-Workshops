@@ -2,7 +2,7 @@
 There will be a reveiw session on IPC144 in Q&A format on Sunday Jan 24th at 8:00 AM. <br />
 This session is open to all the students who need help with IPC144 concepts.<br />
 On Sunday at 8:00 AM click on the link bellow to join the session. (You must use your real full name otherwise you will be kicke out)<br />
-[Joing the IPC144 Review session for OOP244 Students]()
+[Joing the IPC144 Review session for OOP244 Students](https://connect.rna2.blindsidenetworks.com/invite/to?c=-ztYQlxzjFXaVK099G6QgyZZNDmGhrUSxzgEFEwF3Kw&m=ca2ea2034a9a221b74359f5b59c8f490e237e04e&t=1611493114613&u=senecacollege)
 # Computer preparation and Getting Workshop files
 
 ## Setting up your computers for OOP244
