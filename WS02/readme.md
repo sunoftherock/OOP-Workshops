@@ -1,6 +1,7 @@
 ﻿# Workshop #2: Dynamic Memory
 
-*Version 0.9 (submissions will be opened by your prof shortly)*
+- *Version 0.9 (submissions will be opened by your prof shortly)*
+- *Version 0.91 (Corrected Employee Structure in **Employee.h**)*
 
 
 In this workshop, you will use *references* to modify content of variables in other scopes, overload functions and allocate memory at run-time and deallocate that memory when it is no longer required. 
