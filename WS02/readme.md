@@ -285,10 +285,12 @@ Upload your source code and data file to your `matrix` account. Compile and run 
 
 Then, run the following command from your account
 - replace `profname.proflastname` with your professor’s Seneca userid
+- replace **#** with the workshop number
 - replace **??** with your subject code (2**00** or 2**44**)
+```text
+~profname.proflastname/submit 2??/w#/p1
 ```
-~profname.proflastname/submit 2??/w1/p1
-```
+
 and follow the instructions.
 
 > **⚠️Important:** Please note that a successful submission does not guarantee full credit for this workshop. If the professor is not satisfied with your implementation, your professor may ask you to resubmit. Re-submissions will attract a penalty.
@@ -419,9 +421,10 @@ Upload your source code to your `matrix` account. Compile and run your code usin
 
 Then, run the following command from your account
 - replace `profname.proflastname` with your professor’s Seneca userid
+- replace **#** with the workshop number
 - replace **??** with your subject code (2**00** or 2**44**)
-```
-~profname.proflastname/submit 2??/w1/p1
+```text
+~profname.proflastname/submit 2??/w#/p2
 ```
 and follow the instructions.
 
