@@ -113,7 +113,7 @@ In addition to holding the employee records in an dynamically allocated array of
 The data in the file has the following format:
 
 ```Text
-NAME,NUMBER,SALARY<NEWLINE>
+EMPLOYEE NUMBER,SALARY,NAME<NEWLINE>
 ```
 
 and this is a sample file:
