@@ -5,8 +5,8 @@
 namespace sdds {
    struct Employee {
       char* m_name;
-      int m_studentNumber;
-      double m_gpa;
+      int m_empNo;
+      double m_salary;
    };
    //sorts the dynamic array of employees based on the GPA of the employees.
    void sort();
