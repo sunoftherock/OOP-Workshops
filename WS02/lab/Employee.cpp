@@ -53,13 +53,15 @@ namespace sdds {
       bool ok = false;
       int i = 0;
       if (openFile(DATAFILE)) {
-
          noOfEmployees = noOfRecords()
          employees = new Employee[noOfEmployees]
 
-        for (i = 0; i < noOfEmployees, i++)
-          // iterate over employees, run load() on each.
-          // return true if completed
+        for (i = 0; i < noOfEmployees, i++){
+           load(employees[i] == false){
+              
+           }
+           ok = true;
+        }
 
       }
       else {
