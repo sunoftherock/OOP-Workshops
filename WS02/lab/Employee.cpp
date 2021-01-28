@@ -25,9 +25,7 @@ namespace sdds {
    bool load(Employee &one_emp) {
       bool ok = false;
       char name[128];
-
-
-
+      
       // if(
       //read(one_emp.empid) &&
       //read(one_emp.salary) &&
@@ -48,24 +46,23 @@ namespace sdds {
 
       return ok;
    }
-   // TODO: Finish the implementation of the 0 arg load function 
    bool load() {
-      bool ok = false;
+      bool ok = true;
       int i = 0;
       if (openFile(DATAFILE)) {
-         noOfEmployees = noOfRecords()
-         employees = new Employee[noOfEmployees]
-
-        for (i = 0; i < noOfEmployees, i++){
-           load(employees[i] == false){
-              
+         noOfEmployees = noOfRecords();
+         employees = new Employee[noOfEmployees];
+        for (i = 0; i < noOfEmployees; i++){
+           if (load(employees[i])==false){
+              ok = false;
            }
-           ok = true;
         }
-
       }
       else {
          cout << "Could not open data file: " << DATAFILE<< endl;
+      }
+      if (ok == false){
+         cout << "Error: incorrect number of records read; the data is possibly corrupted." << endl;
       }
       return ok;
    }
