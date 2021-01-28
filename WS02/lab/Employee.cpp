@@ -22,30 +22,18 @@ namespace sdds {
       }
    }
 
-   bool load(Employee &one_emp) {
+   bool load(Employee &ind_emp) {
       bool ok = false;
       char name[128];
-      
-      // if(
-      //read(one_emp.empid) &&
-      //read(one_emp.salary) &&
-      //read(name)){
-      //actual_length = strLen(name)+1
-      //}
-      // one_emp.m_Name = new char[strLen(name)+1]
-      // strCopy(one_emp.m_name, name)
-
-
-
-
-      // one_emp.empName = name[0:actual_length];
-      // ok = true;
-
-
-
-
+      if (read(ind_emp.m_empNo) && read(ind_emp.m_salary) && read(name)){
+         int actual_length = strLen(name)+1;
+         ind_emp.m_name = new char[actual_length];
+         strnCpy(ind_emp.m_name, name, actual_length);
+         ok = true;
+      }
       return ok;
    }
+
    bool load() {
       bool ok = true;
       int i = 0;
@@ -68,6 +56,23 @@ namespace sdds {
    }
 
    // TODO: Implementation for the display functions go here
+
+   void display(Employee &ind_emp){
+      cout << ind_emp.m_empNo << ":" << ind_emp.m_name << ind_emp.m_salary << endl;
+   }
+
+   void display(){
+      int i = 0;
+      cout << "Employee Salary report, sorted by employee number" << endl;
+      cout << "no- Empno, Name, Salary" << endl;
+      cout << "------------------------------------------------" <<endl;
+      sort();
+      for (i = 0; i < noOfEmployees; i++){
+         cout << i << "- ";
+         display(employees[i]);
+      };
+   };
+
 
 
    // TODO: Implementation for the deallocateMemory function goes here
