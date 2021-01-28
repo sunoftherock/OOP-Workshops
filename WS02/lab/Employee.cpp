@@ -73,10 +73,11 @@ namespace sdds {
       };
    };
 
-
-
-   // TODO: Implementation for the deallocateMemory function goes here
-
-
-
+   void deallocateMemory(){
+      int i = 0;
+      for (i = 0; i < noOfEmployees; i++){
+         delete[] employees[i].m_name;
+         delete[] &employees[i];
+      }
+   }
 }
