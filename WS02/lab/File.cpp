@@ -20,14 +20,14 @@ namespace sdds {
    void closeFile() {
       if (fptr) fclose(fptr);
    }
-   bool read(char &empName[]) {
-      return (fscanf(fptr, "%[^\n]\n",empName) == 1)
+   bool read(char *empName[]) {
+       return fscanf(fptr, "%[^\n]\n", empName);
    }
    bool read(int &empID) {
-      return (fscanf(fptr, "%d,", empID) == 1)
+       return fscanf(fptr, "%d,", empID);
    }
    bool read(float &empSalary) {
-      return (fscanf(fptr, "%lf,", empID) == 1)
+       return fscanf(fptr, "%lf,", empSalary);
    }
    
 }

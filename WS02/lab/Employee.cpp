@@ -8,7 +8,6 @@ namespace sdds {
    int noOfEmployees;
    Employee* employees;
 
-
    void sort() {
       int i, j;
       Employee temp;
@@ -23,21 +22,30 @@ namespace sdds {
       }
    }
 
-   // TODO: Finish the implementation of the 1 arg load function which
-   // reads one employee record from the file and loads it into the employee reference
-   // argument
-   bool load(...............) {
+   bool load(Employee &one_emp) {
       bool ok = false;
       char name[128];
-      /* if reading of employee number, salay and name are successful
-              allocate memory to the size of the name + 1
-              and keep its address in the name of the Employee Reference
 
-              copy the name into the newly allocated memroy
 
-              make sure the "ok" flag is set to true
-         end if
-      */
+
+      // if(
+      //read(one_emp.empid) &&
+      //read(one_emp.salary) &&
+      //read(name)){
+      //actual_length = strLen(name)+1
+      //}
+      // one_emp.m_Name = new char[strLen(name)+1]
+      // strCopy(one_emp.m_name, name)
+
+
+
+
+      // one_emp.empName = name[0:actual_length];
+      // ok = true;
+
+
+
+
       return ok;
    }
    // TODO: Finish the implementation of the 0 arg load function 
@@ -45,23 +53,14 @@ namespace sdds {
       bool ok = false;
       int i = 0;
       if (openFile(DATAFILE)) {
-         /* 
-          Set the noOfEmployees to the number of recoreds in the file.
-          dyanamically allocated an array of employees into the global
-          Employee pointer; "employees" to the size of the noOfEmployees.
 
-          In a loop load the employee records from the file into 
-          the dynamic array.
+         noOfEmployees = noOfRecords()
+         employees = new Employee[noOfEmployees]
 
-          If the number of the records does not match the number of reads
-             print the message
-            "Error: incorrect number of records read; the data is possibly corrupted"
-          Otherwise
-             set the ok flag to true
-          End if
+        for (i = 0; i < noOfEmployees, i++)
+          // iterate over employees, run load() on each.
+          // return true if completed
 
-          close the file
-          */
       }
       else {
          cout << "Could not open data file: " << DATAFILE<< endl;
