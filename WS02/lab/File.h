@@ -5,7 +5,5 @@ namespace sdds {
    void closeFile();
    int noOfRecords();
    // TODO: Declare read prototypes
- 
-
 }
 #endif // !SDDS_FILE_H_
