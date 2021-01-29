@@ -4,6 +4,8 @@ namespace sdds {
    bool openFile(const char filename[]);
    void closeFile();
    int noOfRecords();
-   // TODO: Declare read prototypes
+   bool read(char* empName);
+   bool read(int& empID);
+   bool read(double& empSalary);
 }
 #endif // !SDDS_FILE_H_
