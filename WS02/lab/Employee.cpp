@@ -1,5 +1,5 @@
 #include <iostream>
-#include "cstring.h"  // implemented in workshop 1 part 2 (DIY)
+#include "cstring.h" 
 #include "Employee.h"
 #include "File.h"
 using namespace std;
@@ -22,13 +22,13 @@ namespace sdds {
       }
    }
 
-   bool load(Employee &ind_emp) {
+   bool load(Employee& ind_emp) {
       bool ok = false;
       char name[128];
       if (read(ind_emp.m_empNo) && read(ind_emp.m_salary) && read(name)){
          int actual_length = strLen(name)+1;
          ind_emp.m_name = new char[actual_length];
-         strnCpy(ind_emp.m_name, name, actual_length);
+         strCpy(ind_emp.m_name, name);
          ok = true;
       }
       return ok;
@@ -55,29 +55,26 @@ namespace sdds {
       return ok;
    }
 
-   // TODO: Implementation for the display functions go here
-
-   void display(Employee &ind_emp){
-      cout << ind_emp.m_empNo << ":" << ind_emp.m_name << ind_emp.m_salary << endl;
+   void display(Employee& ind_emp) {
+       cout << ind_emp.m_empNo << ": " << ind_emp.m_name << ", " << ind_emp.m_salary << endl;
    }
 
-   void display(){
-      int i = 0;
-      cout << "Employee Salary report, sorted by employee number" << endl;
-      cout << "no- Empno, Name, Salary" << endl;
-      cout << "------------------------------------------------" <<endl;
-      sort();
-      for (i = 0; i < noOfEmployees; i++){
-         cout << i << "- ";
-         display(employees[i]);
-      };
+   void display() {
+       int i = 0;
+       cout << "Employee Salary report, sorted by employee number" << endl;
+       cout << "no- Empno, Name, Salary" << endl;
+       cout << "------------------------------------------------" << endl;
+       sort();
+       for (i = 0; i < noOfEmployees; i++) {
+           cout << i + 1 << "- ";
+           display(employees[i]);
+       };
    };
 
    void deallocateMemory(){
       int i = 0;
       for (i = 0; i < noOfEmployees; i++){
          delete[] employees[i].m_name;
-         delete[] &employees[i];
       }
    }
 }
