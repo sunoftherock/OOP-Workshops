@@ -1,7 +1,7 @@
 #include <iostream>
 #include "cstring.h"
-using namespace std;
 #include "Bill.h"
+using namespace std;
 namespace sdds {
 
 
