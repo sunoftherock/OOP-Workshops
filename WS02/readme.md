@@ -211,7 +211,7 @@ The `Employee` module has two global variables:
 The function `sort` has been already implemented. This function sorts the array of employees based on the employee number.
 
 
-***Your coding responsibility in the `File` module.***
+***Your coding responsibility in the `Employee` module.***
 
 Implement following functions:
 
