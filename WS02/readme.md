@@ -366,8 +366,6 @@ File.cpp
 File.h
 Population.cpp
 Population.h
-cstring.h
-cstring.cpp
 ```
 
 ## `File` Module
