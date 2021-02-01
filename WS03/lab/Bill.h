@@ -1,5 +1,5 @@
-#ifndef SDDS_TRANSCRIPT_H
-#define SDDS_TRANSCRIPT_H
+#ifndef SDDS_BILL_H_
+#define SDDS_BILL_H_
 #include "Item.h"
 namespace sdds {
    class Bill {

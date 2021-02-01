@@ -1,5 +1,5 @@
-#ifndef SDDS_SUBJECT_H
-#define SDDS_SUBJECT_H
+#ifndef SDDS_ITEM_H_
+#define SDDS_ITEM_H_
 namespace sdds {
    class Item {
       char m_itemName[21];
