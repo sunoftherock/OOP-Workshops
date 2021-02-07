@@ -3,7 +3,7 @@ The next reveiw session on IPC144 will be on Sunday ~~Jan 31st~~ Feb 7th at 8:00
 This session is open to all the students who need help with IPC144 concepts.<br />
 On Sunday at 8:00 AM click on the link bellow to join the session. (You must use your real full name otherwise you will be kicke out)<br />
 ## Join
-[Join the IPC144 Review session for OOP244 Students](https://connect.rna2.blindsidenetworks.com/invite/to?c=-ztYQlxzjFXaVK099G6QgyZZNDmGhrUSxzgEFEwF3Kw&m=ca2ea2034a9a221b74359f5b59c8f490e237e04e&t=1611493114613&u=senecacollege)
+[Join the IPC144 Review session for OOP244 Students](https://connect.rna2.blindsidenetworks.com/invite/to?c=o8wqJ2Sv-uvX0pePiOVQNRag5TC3CrNL6IYflfUmiec&m=ca2ea2034a9a221b74359f5b59c8f490e237e04e&t=1612701823669&u=senecacollege)
 ## Review Recordings
 - Session 1 [BigBlueButton](https://recordings.rna2.blindsidenetworks.com/senecacollege/0b553525140a0a7885b1f0a71edfa98d2652d1ff-1611493114663/capture/) - [YouTube](https://youtu.be/_Ktv6ti5iuA)
 ## Review Session Codes
