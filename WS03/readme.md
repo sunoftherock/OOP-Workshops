@@ -355,7 +355,7 @@ Otherwise, if the incoming arguments are valid:
        bool add(const char* item_name, double price, bool taxed);
 ```
 
-If the number of added **Item**s (**m_itemsAdded**) is less than the length of the **m_items** array, this function will set the next available subject to the incoming argument values. Then it will add one to the **m_itemsAdded** and return true;
+If the number of added **Item**s (**m_itemsAdded**) is less than the lenmgth of the **m_items** array, this function will set the next available subject to the incoming argument values. Then it will add one to the **m_itemsAdded** and return true;
 
 Otherwise, this function will do nothing, returning false;
 
