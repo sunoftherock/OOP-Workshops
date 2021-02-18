@@ -15,7 +15,7 @@ namespace sdds {
    public:
       Canister();
       Canister(const char* contentName);
-      Canister(double hieght, double diameter,
+      Canister(double height, double diameter,
          const char* contentName = nullptr);
       ~Canister();
       Canister& setContent(const char* contentName);
