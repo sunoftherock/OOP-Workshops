@@ -1,0 +1,20 @@
+// Workshop 4: DIY
+// Date: 2/14/2021
+// Author: Ruoqi Sun
+// Student #: 135388205
+// Class: OOP224
+// I have done all the coding by myself and only copied the code that my professor provided to
+// complete my workshops and assignments.
+//
+///////////////////////////////////////////////////
+
+Reflection:
+
+One new thing I learned during this assignment was the use of a constructor. It's really interesting because to me, because it seems just like the overload
+of any other function. With this, I'm able to control what's being initialized and how. This is really useful for thinking about my different scenerios of
+how I want my functions to work if my arguments are different.
+
+
+I really liked the DIY because unlike some previous assignments, there was a little bit of freedom here. For example, I could think about what member functions
+belonged to the class, and how to implement some functions. I wish there was a little more freedom, but it's okay. We get to think about how to do the implementation ourself,
+and I think that's the best part about being able to do a project like this. 
