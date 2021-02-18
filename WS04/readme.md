@@ -88,7 +88,6 @@ The **Canister** can be created in three different ways;
 #### Pouring contents of one canister into another
 You can fill the Canisters with the content they are labelled for. If too much is poured into the Canister, it will overflow and rendered unsalable.
 
-
 You can pour all or some of the content of one Canister into another. If this results in mixed content, the target will be rendered unusable.
 
 For example, if you can fill an empty orange juice Canister with the contents of a Canister holding Olive oil. Since the Orange juice Canister was empty everything will be OK and the Canister will be re-labelled as Olive oil. But if the orange juice canister has some orange juice in it, then it would have been rendered unusable.

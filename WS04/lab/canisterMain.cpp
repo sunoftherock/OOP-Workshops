@@ -35,7 +35,7 @@ int main() {
    C[6].pour(C[5]);
    showCans("Filled one with the milk from another", &C[5], 2);
    showCans("Poured 1500ccs of Olive oil into Olive oil canister", &C[4].pour(1500), 1);
-   C[5].pour(C[4]);
+ C[5].pour(C[4]);
    showCans("Filled can of milk with olive oil", &C[4], 2);
    showCans("Poured too much into olive oil canister", &C[4].pour(1500), 1);
    for (i = 3; i < 9; i++) C[i].setContent(nullptr);

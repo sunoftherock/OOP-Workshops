@@ -5,7 +5,7 @@ namespace sdds {
    class Canister {
       char* m_contentName;
       double m_diameter; // in centimeters 
-      double m_hieght;   // in centimeters
+      double m_height;   // in centimeters
       double m_contentVolume;  // in CCs
       bool m_usable;
       void setToDefault();
