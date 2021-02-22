@@ -65,7 +65,7 @@ To check the output, use a program that can compare text files.  Search online f
 
 # LAB (50%) TextFile module
 
-Your task for this lab is to complete the implementation of the **TexgFile** module. This module attaches itself to a text file on the hard drive loads the content of the text file into itself.
+Your task for this lab is to complete the implementation of the **TextFile** module. This module attaches itself to a text file on the hard drive loads the content of the text file into itself.
 
 This module is then capable of displaying the text file page by page on the screen or give the user program read-only access to lines of the text file as an array of C-strings.
 
