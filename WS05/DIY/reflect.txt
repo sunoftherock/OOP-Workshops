@@ -1,0 +1,23 @@
+// Workshop 5: DIY
+// Date: 2/20/2021
+// Author: Ruoqi Sun
+// Student #: 135388205
+// Class: OOP224
+// I have done all the coding by myself and only copied the code that my professor provided to
+// complete my workshops and assignments.
+//
+///////////////////////////////////////////////////
+
+
+This week, I learned a lot about overloading functions and how to create helper functions.
+It wasn't like I wasn't using helper functions before, but now I understand the benefits of using them,
+and how to use them to work with classes. I feel liberated, free, now that I learned them. This is because
+in the DIY portion, it took me 1/3 of the time of the lab because I put all the repetitive logic into helper
+functions.
+
+As an example, before this class, I would have written if (grade >= 0 && grade <= 100) in every function,
+and then set the grade property manually. However, once I wrote this one setGrade() function to set and check,
+my work is already almost done! every other function just calleed this one to set and check, and it had a reliable
+behaviour.
+
+I learned some cool concepts this class and look forward to the next one.
