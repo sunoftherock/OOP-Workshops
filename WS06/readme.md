@@ -1,5 +1,5 @@
 ﻿ # Workshop #6: Classes and resources, IO operators
-* Version 0.9 
+* Version 0.91 (reviewed, minor modifications to the text) 
 
 In this workshop, you will implement classes with resources that follow [the rule of 3](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) to be safely copied and assigned.
 
@@ -65,9 +65,9 @@ To check the output, use a program that can compare text files.  Search online f
 
 # LAB (50%) TextFile module
 
-Your task for this lab is to complete the implementation of the **TexgFile** module. This module attaches itself to a text file on the hard drive loads the content of the text file into itself.
+Your task for this lab is to complete the implementation of the **TextFile** module. This module attaches itself to a text file on the hard drive and loads the content of the text file into an array of **Line**s.
 
-This module is then capable of displaying the text file page by page on the screen or give the user program read-only access to lines of the text file as an array of C-strings.
+This module is then capable of displaying the text file page by page on the screen or give the user program read-only access to the lines of the text file as an array of C-strings.
 
 A **Textfile** can be safely copied, and the copying will also result in the creation of a copy of the attached file on the hard drive.
 
@@ -92,7 +92,7 @@ class TextFile{
 ```
 
 ## The Line Class
-The **Line** class if fully private should only be accessible by the **TextFile** class.
+The **Line** class is fully private and should only be accessible by the **TextFile** class.
 ```C++
    class Line {
       char* m_value;
@@ -115,7 +115,7 @@ Dynamically allocates memory in **m_value** and copies the Cstring pointed by **
 ### default constructor 
 Initializes the **m_value** attribute to **nullptr**.
 ### destructor
-Makes sure all memory allocated is freed. 
+Makes sure all the allocated memory is freed. 
 
 > Make sure **Line** can not be copied or assigned to another **Line**.
 
@@ -162,7 +162,7 @@ An unsigned integer to be set to the number of lines in the file.
 ```C++
 unsigned m_pageSize;
 ```
-The page size is the number of lines that should be displayed on the screen before the display is paused. After a display of these lines, the user must hit enter for the next page to appear. 
+The page size is the number of lines that should be displayed on the screen before the display is paused. After these lines are displayed, the user must hit enter for the next page to appear. 
 ### Private Methods (Member functions)
 #### setEmpty
 ```C++
@@ -186,11 +186,11 @@ setFilename("abc.txt", true); // sets the m_filename to "C_abc.txt"
 ```C++
 void setNoOfLines();
 ```
-Counts the number of line in the file:
+Counts the number of lines in the file:
 
 Creates a local **ifstream** object to open the file with the name held in **m_filename**. Then it will read the file, character by character, and accumulates the number of newlines in the **m_noOfLines** attribute. 
 
-In the end, it will add one to **m_noOfLines** just in case the last line does not have a new line at the end.
+In the end, it will increase **m_noOfLines** by one, just in case, the last line does not have a new line at the end.
 
 If the number of lines is zero, it will delete the m_filename and set it to nullptr. (Setting the TextFile to a safe empty state)
 
@@ -198,7 +198,7 @@ If the number of lines is zero, it will delete the m_filename and set it to null
 ```C++
 void loadText();
 ```
-Loads the text file m_filename into the dynamic array of Lines pointed by m_textLines:<br />
+Loads the text file **m_filename** into the dynamic array of Lines pointed by **m_textLines** :<br />
 If the **m_filename** is null, this function does nothing.
 
 If the **m_filename** is not null (**TextFile** is not in a safe empty state ), **loadText()** will dynamically allocate an array of Lines pointed by **m_textLines** with the size kept in m_noOfLines. 
