@@ -2,7 +2,7 @@
 #define SDDS_TEXTFILE_H__
 #include <iostream>
 namespace sdds {
-   class Text;
+   class TextFile;
    class Line {
       char* m_value{ nullptr };
       operator const char* ()const;
