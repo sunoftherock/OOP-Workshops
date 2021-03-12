@@ -6,7 +6,7 @@ namespace sdds {
    class Line {
       char* m_value{ nullptr };
       operator const char* ()const;
-      Line() {}
+      Line() {};
       Line& operator=(const char*);
       ~Line();
       friend class TextFile;
@@ -27,8 +27,8 @@ namespace sdds {
    public:
       TextFile(unsigned pageSize = 15);
       TextFile(const char* filename, unsigned pageSize = 15);
-      TextFile(const TextFile&);
-      TextFile& operator=(const TextFile&);
+      TextFile(const TextFile& other);
+      TextFile& operator=(const TextFile& other);
       ~TextFile();
       std::ostream& view(std::ostream& ostr)const;
       std::istream& getFile(std::istream& istr);
